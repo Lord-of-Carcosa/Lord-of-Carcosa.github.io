@@ -1,0 +1,19 @@
+body {
+  background-color: #CA6F1E;
+  font-family: "times new roman", sans-serif;
+}
+.bigsection {
+  text-align: center;
+}
+.bigsection p {
+  font-size: 24px;
+}
+
+
+.smallsection ul, .smallsection p {
+  font-size: 18px;
+}
+
+ul li a {
+  color: #0B5345;
+}
