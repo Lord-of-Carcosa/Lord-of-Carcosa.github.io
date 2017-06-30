@@ -9,13 +9,20 @@ body {
   font-size: 24px;
 }
 
+p a {
+  color: #0B5345;
+}
 
-.smallsection ul, .smallsection p{
+.smallsection ul, .smallsection p, .smallsection i {
   font-size: 18px;
 }
 
 ul li a {
   color: #0B5345;
+}
+
+.disclaimer{
+  font-size= 4px;
 }
 
 .expandable {
