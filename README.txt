@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/Jack_Harkness/pen/yXPGzR.
-
- 
+A travel website for the fictional nation of Lemuria.
