@@ -46,14 +46,14 @@
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)" tabindex=0><span class="hidden">Image 1</span></span> 
-  <span class="dot" onclick="currentSlide(2)"><span class="hidden" tabindex=0>Image 2</span></span> 
-  <span class="dot" onclick="currentSlide(3)"><span class="hidden" tabindex=0>Image 3</span></span> 
+  <span class="dot" onKeyPress="currentSlide(1)" onclick="currentSlide(1)" tabindex=0><span class="hidden">Image 1</span></span> 
+  <span class="dot" onclick="currentSlide(2)" onKeyPress="currentSlide(2)"><span class="hidden" tabindex=0>Image 2</span></span> 
+  <span class="dot" onclick="currentSlide(3)"onKeyPress="currentSlide(3)"><span class="hidden" tabindex=0>Image 3</span></span> 
 </div>
   </div>
   <div class='smallsection'>
     <h2><a href="about.html">About Us (Click for About page)</a></h2>
-    <button onclick="expand1()">Show/Hide Text</button>
+    <button onclick="expand1()" onKeyPress="expand1()">Show/Hide Text</button>
     <div id="expandable1" class="expandable">
     <p>Lemuria is a small island off of the West North American coast, discovered by the famed explorer Howard Philips.</p>
     <p>Long thought but a legend, the island was uninhabited; however, there were the ruins of a great civilization on its surface. Scraps of ancient texts named these cities, and other more modern cities were built near them.</p>
@@ -64,7 +64,7 @@
   
   <div class="smallsection">
     <h2><a href="citiesmain.html">Cities (Click for Cities page)</a></h2>
-    <button onclick="expand2()">Show/Hide Text</button>
+    <button onclick="expand2()" onKeyPress="expand2()">Show/Hide Text</button>
     <div id="expandable2" class="expandable">
     <p>Lemuria has many cities. Some of them are the ancient cities discovered by the first explorers. Some are more modern. Almost all are crawling with seemingly unearthly horrors. So stop by some of our most famous: (All links take you to the main page for that place)
       <ul>
