@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html >
 <head>
   <meta charset="UTF-8">
-  <title>Cities (Lemuria)</title>
+  <title>Cities</title>
   
   
   
@@ -37,6 +37,40 @@
     <div class="expandable" id="expandable2">
     <p>R'lyeh is a city that is located at the bottom of the lake of Hali, to the east of Carcosa. However, the Lemuria Tourism Initiative has helpfully provided transport to the city, free of charge, and has constructed an airtight bubble around the city so that you can actually go inside.</p>
     <p>The largest and most noticable attraction in R'lyeh is the Ancient Temple. It is a temple to some forgotten god now known only as "Cthulhu." However, the god is forgotten but not gone (<i>that is not dead which can eternal lie and with strange aeons even death may die</i>), and every 66.6 hours, a random lucky visitor is chosen to be feasted upon by Great Cthulhu. It is a great honor*, so if you or a loved one is chosen, take a moment to drop to your knees and praise the all-mighty Cthulhu.</p>
+      <p>Time since Cthulhu last devoured a victim:</p>
+      <script type = "text/javascript">
+
+var timeInSecs;
+var ticker;
+
+function startTimer(secs) {
+timeInSecs = parseInt(secs);
+ticker = setInterval("tick()", 1000); 
+}
+
+function tick( ) {
+var secs = timeInSecs;
+if (secs > 0) {
+timeInSecs--; 
+}
+else {
+clearInterval(ticker);
+startTimer(172800);  // start again
+}
+
+var hours= Math.floor(secs/3600);
+secs %= 3600;
+var mins = Math.floor(secs/60);
+secs %= 60;
+var pretty = ( (hours < 10 ) ? "0" : "" ) + hours + ":" + ( (mins < 10) ? "0" : "" ) + mins + ":" + ( (secs < 10) ? "0" : "" ) + secs;
+document.getElementById("countdown").innerHTML = pretty;
+}
+
+startTimer(239760);  // 66.6 hours in seconds
+
+</script>
+
+<span id="countdown" style="font-weight: bold;"></span>
     <p>For more attractions, please visit the R'lyeh homepage.
   <div class="disclaimer">
     *Disclaimer: the nation of Lemuria is not responsible for locating your loved one's remains after they have been devoured alive by Great Cthulhu, nor are they liable for your loved ones being snatched by the colossal arm and being pulled into the depths of the abyss.</div>
