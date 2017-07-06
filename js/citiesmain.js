@@ -78,3 +78,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+function change1() 
+{
+    var elem = document.getElementById("myButton1");
+    if (elem.value=="Hide Information") {
+      elem.value = "Show Information";
+    }
+    else {
+      elem.value = "Hide Information";
+    }
+}
