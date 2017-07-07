@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html >
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,7 @@
   <head>
   <title>Cities of Lemuria</title>
   <link rel="stylesheet" type="text/css" href="css/citiesmain.css">
-  <script src="index.js"></script>
+  <script src="citiesmain.js"></script>
 <body>
   <div class='bigsection'>
     <h1>Cities of Lemuria</h1>
@@ -45,7 +45,8 @@
   </div>
   <div class='smallsection'>
     <h2>Carcosa</h2>
-    <input type="button" onKeyPress="expand1()"onclick="expand1()" id="myButton1" onKeyPress="change1()" onclick="change1()" value="Show Information"/>
+    <input type="button" onKeyPress="expand1()"onclick="expand1()" id="myShowButton1" class="showbutton" value="Show Information"/>
+    <input type="button" onKeyPress="expand1()"onclick="expand1()" id="myHideButton1" class = "hidebutton" value="Hide Information"/>
     <div id="expandable1" class="expandable">
     <p>Carcosa is a large ruined city near the southern coast of Lemuria. In the center is a palace in almost pristine condition, the tallest spire of which is built directly where, during the earth's rotation, the star of Aldebaran is directly above at exactly one time in the year.</p>
     <p>This palace, known to residents as the Ancient Palace, is full of strange and wonderful sights. Feel free to stop by.*</p>
@@ -56,7 +57,9 @@
   </div>
   <div class='smallsection'>
     <h2>R’lyeh</h2>
-    <button onKeyPress="expand2()"onclick="expand2()" id="myButton2" onKeyPress="change2()" onclick="change1">Show/Hide Information</button>
+    <input type="button" onKeyPress="expand2()"onclick="expand2()" id="myShowButton2" class="showbutton" value="Show Information"/>
+    <input type="button" onKeyPress="expand2()"onclick="expand2()" id="myHideButton2" class = "hidebutton" value="Hide Information"/>
+
     <div class="expandable" id="expandable2">
     <p>R'lyeh is a city that is located at the bottom of the lake of Hali, to the east of Carcosa. However, the Lemuria Tourism Initiative has helpfully provided transport to the city, free of charge, and has constructed an airtight bubble around the city so that you can actually go inside.</p>
     <p>The largest and most noticable attraction in R'lyeh is the Ancient Temple. It is a temple to some forgotten god now known only as "Cthulhu." However, the god is forgotten but not gone (<i>that is not dead which can eternal lie and with strange aeons even death may die</i>), and every 66.6 hours, a random lucky visitor is chosen to be feasted upon by Great Cthulhu. It is a great honor*, so if you or a loved one is chosen, take a moment to drop to your knees and praise the all-mighty Cthulhu.</p>
@@ -100,27 +103,35 @@ startTimer(239760);  // 66.6 hours in seconds
   </div>
   <div class="smallsection">
     <h2>Innsmouth</h2>
-    <button onKeyPress="expand3()" onclick="expand3()">Show/Hide Information</button>
+    <input type="button" onKeyPress="expand3()"onclick="expand3()" id="myShowButton3" class="showbutton" value="Show Information"/>
+    <input type="button" onKeyPress="expand3()"onclick="expand3()" id="myHideButton3" class = "hidebutton" value="Hide Information"/>
+
     <div id="expandable3" class="expandable">
     <p>Located on the eastern shore of Lemuria, Innsmouth is a charming town. It is the island's leading producer of fish, and also includes a large Deep One population.</p>
     <p>One of the main attractions of Innsmouth is located just 10 miles off the coast: Devil Reef, a huge coral reef. Take an underwater or surface tour of this remarkable natural phenomena.</p>
     <p>For more attractions, please visit the Innsmouth homepage.</p>
     </div>
     <h2>Arkham</h2>
-    <button onKeyPress="expand4()" onclick="expand4()">Show/Hide Information</button>
+    <input type="button" onKeyPress="expand4()"onclick="expand4()" id="myShowButton4" class="showbutton" value="Show Information"/>
+    <input type="button" onKeyPress="expand4()"onclick="expand4()" id="myHideButton4" class = "hidebutton" value="Hide Information"/>
+
     <div class="expandable" id="expandable4">
     <p>Not to be confused with the equally famous asylum made famous in DC Comics, Arkham is a quaint little town, reminsicent of 1920's Massachusetts in the United States.</p>
     <p>The most famous location in Arkham is the Miskatonic Library, one of the biggest libraries in the world and home to the largest occult collection available. Featuring such tomes as the King in Yellow, the Necronomicon, The Sussex Manuscript and more!</p>
     <p> For more attractions, please visit the Arkham home page.</p>
     </div>
     <h2>Hyperborea</h2>
-    <button onclick="expand5()">Show/Hide Information</button>
+    <input type="button" onKeyPress="expand5()"onclick="expand5()" id="myShowButton5" class="showbutton" value="Show Information"/>
+    <input type="button" onKeyPress="expand5()"onclick="expand5()" id="myHideButton5" class = "hidebutton" value="Hide Information"/>
+
     <div class=expandable id="expandable5">
     <p>Located in the far north of Lemuria, in a range of mountainous features, is Hyperborea. Home to one of the most technologically advanced of the civilizations discovered to have existed, stop by and see the sights!</p>
     <p>For the attractions of this marvelous location, please visit the Hyperborea home page.</p>
     </div>
     <h2>Yuggoth</h2>
-    <button onclick="expand6()">Show/Hide Information</button>
+    <input type="button" onKeyPress="expand6()"onclick="expand6()" id="myShowButton6" class="showbutton" value="Show Information"/>
+    <input type="button" onKeyPress="expand6()"onclick="expand6()" id="myHideButton6" class = "hidebutton" value="Hide Information"/>
+
     <div class="expandable" id="expandable6">
     <p>Home of some of the most fascinating life on the entire island, the Mi-Go, who have constructed intricate structures and even seem to have been digging in the earth for resources!</p>
     <p> In the Mi-Go Mines, the Mi-Go are digging up a valuable metal known as tok'l. It is unknown what they could use it for, but it has proved to be invaluable in making containers for biological specimens and containers to store organs prior to transplant.</p>
