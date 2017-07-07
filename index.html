@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  <head>
+  <html lang="en">
+<head>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title> Welcome to Lemuria</title>
 </head>
@@ -49,7 +50,8 @@
   </div>
   <div class='smallsection'>
     <h2><a href="about.html">About Us (Click for About page)</a></h2>
-    <button onclick="expand1()" onKeyPress="expand1()">Show/Hide Text</button>
+    <input type="button" onKeyPress="expand1()"onclick="expand1()" id="myShowButton1" class="showbutton" value="Show Information"/>
+    <input type="button" onKeyPress="expand1()"onclick="expand1()" id="myHideButton1" class = "hidebutton" value="Hide Information"/>
     <div id="expandable1" class="expandable">
     <p>Lemuria is a small island off of the West North American coast, discovered by the famed explorer Howard Philips.</p>
     <p>Long thought but a legend, the island was uninhabited; however, there were the ruins of a great civilization on its surface. Scraps of ancient texts named these cities, and other more modern cities were built near them.</p>
@@ -60,7 +62,8 @@
   
   <div class="smallsection">
     <h2><a href="citiesmain.html">Cities (Click for Cities page)</a></h2>
-    <button onclick="expand2()" onKeyPress="expand2()">Show/Hide Text</button>
+    <input type="button" onKeyPress="expand2()"onclick="expand2()" id="myShowButton2" class="showbutton" value="Show Information"/>
+    <input type="button" onKeyPress="expand2()"onclick="expand2()" id="myHideButton2" class = "hidebutton" value="Hide Information"/>
     <div id="expandable2" class="expandable">
     <p>Lemuria has many cities. Some of them are the ancient cities discovered by the first explorers. Some are more modern. Almost all are crawling with seemingly unearthly horrors. So stop by some of our most famous:
       <ul>
@@ -76,8 +79,9 @@
     </div>
   </div>
 <div class="smallsection">
-  <h2>Legal Information (Click for Legal Information page)</h2>
+  <h2>Legal Information</h2>
   <p>Information that is legally required for you to know before you can travel to Lemuria.</p>
+  </html>
   
     <script src="js/index.js"></script>
 
