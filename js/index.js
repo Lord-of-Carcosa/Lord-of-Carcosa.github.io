@@ -1,6 +1,5 @@
 function expand1() {
-  var showButton = document.getElementById("myShowButton1");
-  var hideButton = document.getElementById("myHideButton1");
+  var button = document.getElementById("myButton1");
     var x = document.getElementById('expandable1');
     if (x.style.display === 'block') {
         x.style.display = 'none';
@@ -9,19 +8,16 @@ function expand1() {
         x.style.display = 'block';
     }
    if (x.style.display === 'block') {
-    showButton.style.display = 'none';
-    hideButton.style.display = 'block';
+    button.value = "Hide Information";
   }
   else {
-    showButton.style.display = 'block';
-    hideButton.style.display = 'none';
+    button.value = "Show Information";
   }
   
 }
 
 function expand2() {
-  var showButton = document.getElementById("myShowButton2");
-  var hideButton = document.getElementById("myHideButton2");
+  var button = document.getElementById("myButton2");
     var x = document.getElementById('expandable2');
     if (x.style.display === 'block') {
         x.style.display = 'none';
@@ -30,20 +26,17 @@ function expand2() {
         x.style.display = 'block';
     }
    if (x.style.display === 'block') {
-    showButton.style.display = 'none';
-    hideButton.style.display = 'block';
+    button.value = "Hide Information";
   }
   else {
-    showButton.style.display = 'block';
-    hideButton.style.display = 'none';
+    button.value = "Show Information";
   }
   
 }
 
 
 function expand3() {
-  var showButton = document.getElementById("myShowButton3");
-  var hideButton = document.getElementById("myHideButton3");
+  var button = document.getElementById("myButton3");
     var x = document.getElementById('expandable3');
     if (x.style.display === 'block') {
         x.style.display = 'none';
@@ -52,20 +45,17 @@ function expand3() {
         x.style.display = 'block';
     }
    if (x.style.display === 'block') {
-    showButton.style.display = 'none';
-    hideButton.style.display = 'block';
+    button.value = "Hide Information";
   }
   else {
-    showButton.style.display = 'block';
-    hideButton.style.display = 'none';
+    button.value = "Show Information";
   }
   
 }
 
 
 function expand4() {
-  var showButton = document.getElementById("myShowButton4");
-  var hideButton = document.getElementById("myHideButton4");
+  var button = document.getElementById("myButton4");
     var x = document.getElementById('expandable4');
     if (x.style.display === 'block') {
         x.style.display = 'none';
@@ -74,20 +64,17 @@ function expand4() {
         x.style.display = 'block';
     }
    if (x.style.display === 'block') {
-    showButton.style.display = 'none';
-    hideButton.style.display = 'block';
+    button.value = "Hide Information";
   }
   else {
-    showButton.style.display = 'block';
-    hideButton.style.display = 'none';
+    button.value = "Show Information";
   }
   
 }
 
 
 function expand5() {
-  var showButton = document.getElementById("myShowButton5");
-  var hideButton = document.getElementById("myHideButton5");
+  var button = document.getElementById("myButton5");
     var x = document.getElementById('expandable5');
     if (x.style.display === 'block') {
         x.style.display = 'none';
@@ -96,20 +83,17 @@ function expand5() {
         x.style.display = 'block';
     }
    if (x.style.display === 'block') {
-    showButton.style.display = 'none';
-    hideButton.style.display = 'block';
+    button.value = "Hide Information";
   }
   else {
-    showButton.style.display = 'block';
-    hideButton.style.display = 'none';
+    button.value = "Show Information";
   }
   
 }
 
 
 function expand6() {
-  var showButton = document.getElementById("myShowButton6");
-  var hideButton = document.getElementById("myHideButton6");
+  var button = document.getElementById("myButton6");
     var x = document.getElementById('expandable6');
     if (x.style.display === 'block') {
         x.style.display = 'none';
@@ -118,12 +102,10 @@ function expand6() {
         x.style.display = 'block';
     }
    if (x.style.display === 'block') {
-    showButton.style.display = 'none';
-    hideButton.style.display = 'block';
+    button.value = "Hide Information";
   }
   else {
-    showButton.style.display = 'block';
-    hideButton.style.display = 'none';
+    button.value = "Show Information";
   }
   
 }

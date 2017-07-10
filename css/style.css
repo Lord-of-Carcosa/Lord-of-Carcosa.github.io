@@ -9,11 +9,8 @@ body {
   font-size: 24px;
 }
 
-p a {
-  color: #0B5345;
-}
 
-.smallsection ul, .smallsection p, .smallsection i {
+.smallsection ul, .smallsection p{
   font-size: 18px;
 }
 
@@ -21,19 +18,11 @@ ul li a {
   color: #0B5345;
 }
 
-.disclaimer{
-  font-size= 4px;
-}
-
 .expandable {
   display: none
 }
-.showbutton {
-  display: inline;
-}
-.hidebutton {
-  display: none
-}
+
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
