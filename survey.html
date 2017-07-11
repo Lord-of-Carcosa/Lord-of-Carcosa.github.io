@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/survey.css">
+
+  
+</head>
+
+<body>
+  <form>
+    <ol>
+    <li> When did you last travel to Lemuria?
+      <p><input type="radio" name="time" value="< 1 year ago">Less than 1 year ago</p>
+      <p><input type="radio" name="time" value="< 2 years ago">Less than 2 years ago</p>
+      <p><input type="radio" name="time" value="> 2 years ago">More than 2 years ago</p>
+      </li>
+      <li> Describe your experience in the field below.
+        <p><textarea name="message" rows="10" cols="30"></textarea></p></li>
+      <li> Which cities did you visit? (Check all that apply)
+        <p><input type="checkbox" name="city1" value="Carcosa">Carcosa</p>
+        <p><input type="checkbox" name="city2" value="R'lyeh" id="rlyeh">R'lyeh</p>
+        <p><input type="checkbox" name="city3" value="Innsmouth">Innsmouth</p>
+        <p><input type="checkbox" name="city4" value="Arkham">Arkham</p>
+        <p><input type="checkbox" name="city5" value="Hyperborea">Hyperborea</p>
+        <p><input type="checkbox" name="city6" value="Yuggoth">Yuggoth</p>
+        <p><input type="checkbox" name="city7" value="Other">Other (please specify): <input type="text" name="othercity"></p>
+        <li> How long was your stay?
+          <p><select value="Number of">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value=">7">More than 7</option>
+            </select>
+            <select value="timeunit">
+              <option value="Days">Days</option>
+              <option value="Weeks">Weeks</option>
+              <option value="Months">Months</option>
+              <option value="Years">Years</option>
+              <option value="Decades">Decades</option>
+              <option value="Centuries">Centuries</option>
+              <option value="Millenia">Millenia</option>
+              <option value="Eons">Eons</option>
+              <option value="Strange Aeons">Strange Aeons</option>
+            </select>
+      </li>
+      <li> Is there anything else you want us to know? Feedback? Suggestions?
+        <p><textarea name="message" rows="10" cols="30"></textarea></p></li>
+    </ol>
+  <input type="button" value="Submit" onclick="alertFunction()" onKeyPress="alertFunction()">
+    </form>
+  
+    <script src="js/survey.js"></script>
+
+</body>
+</html>
