@@ -34,3 +34,6 @@ ul li a {
 .invisible {
   display: block;
 }
+fieldset {
+  border: none;
+}
