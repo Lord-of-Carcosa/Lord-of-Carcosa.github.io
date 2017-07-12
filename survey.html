@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <form>
+    <form>
     <ol>
       <li><fieldset> <legend>When did you last travel to Lemuria?</legend>
       <p><input type="radio" name="time" id="time1" value="< 1 year ago"><label for="time1">Less than 1 year ago</label></p>
@@ -55,6 +55,11 @@
               <option value="Strange Aeons">Strange Aeons</option>
       </select></fieldset>
       </li>
+    <li><fieldset><legend>Did you acquire any forbidden knowledge in Lemuria? Secrets?</legend>
+      <input type="radio" value="yes" id="yessecrets"><label for="yessecrets">Yes</label>
+      <input type="radio" value="no" id="nosecrets"><label for="nosecrets">No</label></fieldset></li>
+      <li><fieldset><legend><label for="secrets">If so, what were they?</label></legend>
+        <input type="textarea" id="secrets"></fieldset></li>
       <li> <fieldset><legend><label for="feedback">Is there anything else you want us to know? Feedback? Suggestions?</label></legend>
         <p><textarea name="message" rows="10" cols="30" id="feedback"></textarea></p></li>
         </fieldset>
