@@ -28,5 +28,9 @@ ul li a {
 }
 
 .expandable {
-  display: none
+  display: none;
+}
+
+.invisible {
+  display: block;
 }

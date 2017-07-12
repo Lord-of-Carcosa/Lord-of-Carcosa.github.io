@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
   <meta charset="UTF-8">
   <title>Survey</title>
@@ -14,23 +14,25 @@
 <body>
   <form>
     <ol>
-    <li> When did you last travel to Lemuria?
-      <p><input type="radio" name="time" value="< 1 year ago">Less than 1 year ago</p>
-      <p><input type="radio" name="time" value="< 2 years ago">Less than 2 years ago</p>
-      <p><input type="radio" name="time" value="> 2 years ago">More than 2 years ago</p>
+      <li><fieldset> <legend>When did you last travel to Lemuria?</legend>
+      <p><input type="radio" name="time" id="time1" value="< 1 year ago"><label for="time1">Less than 1 year ago</label></p>
+      <p><input type="radio" id="time2" name="time" value="< 2 years ago"><label for="time2">Less than 2 years ago</label></p>
+      <p><input type="radio" id="time3" name="time" value="> 2 years ago"><label for="time3">More than 2 years ago</label></p></fieldset>
       </li>
-      <li> Describe your experience in the field below.
-        <p><textarea name="message" rows="10" cols="30"></textarea></p></li>
-      <li> Which cities did you visit? (Check all that apply)
-        <p><input type="checkbox" name="city1" value="Carcosa">Carcosa</p>
-        <p><input type="checkbox" name="city2" value="R'lyeh" id="rlyeh">R'lyeh</p>
-        <p><input type="checkbox" name="city3" value="Innsmouth">Innsmouth</p>
-        <p><input type="checkbox" name="city4" value="Arkham">Arkham</p>
-        <p><input type="checkbox" name="city5" value="Hyperborea">Hyperborea</p>
-        <p><input type="checkbox" name="city6" value="Yuggoth">Yuggoth</p>
-        <p><input type="checkbox" name="city7" value="Other">Other (please specify): <input type="text" name="othercity"></p>
-        <li> How long was your stay?
-          <p><select value="Number of">
+      <li><fieldset><legend> <label for "experience">Describe your experience in the field below.</legend></label>
+        <p> <br><textarea name="message" id="experience" rows="10" cols="30"></textarea></p></li></fieldset>
+  <li> <fieldset><legend>Which cities did you visit? (Check all that apply)</legend>
+        <p><input type="checkbox" name="city1" value="Carcosa" id="carcosa"><label for="carcosa">Carcosa</label></p>
+        <p><input type="checkbox" name="city2" value="R'lyeh" id="rlyeh"><lbel for="rlyeh">R'lyeh</label></p>
+        <p><input type="checkbox" name="city3" value="Innsmouth" id="innsmouth"><label for="innsmouth">Innsmouth</label></p>
+        <p><input type="checkbox" name="city4" value="Arkham" id="arkham"><label for="arkham">Arkham</label></p>
+        <p><input type="checkbox" name="city5" value="Hyperborea" id="hyperborea"><label for ="hyperborea">Hyperborea</label></p>
+        <p><input type="checkbox" name="city6" value="Yuggoth" id="yuggoth"><label for="yuggoth">Yuggoth</label></p>
+        <p><input type="checkbox" name="city7" value="Other" id="other"><label for="other">Other (please specify): </label><input type="text" name="othercity" id="othertext"></p>
+        </fieldset>
+        </li>
+  <li><fieldset><legend> How long was your stay?</legend>
+    <p><label for="numberof" class="invisible">Number</label><select value="Number of" id="numberof">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -40,7 +42,8 @@
             <option value="7">7</option>
             <option value=">7">More than 7</option>
             </select>
-            <select value="timeunit">
+      <label for="timeunit" class="invisible">Time Unit</label>
+            <select value="timeunit" id="timeunit">
               <option value="Days">Days</option>
               <option value="Weeks">Weeks</option>
               <option value="Months">Months</option>
@@ -50,10 +53,11 @@
               <option value="Millenia">Millenia</option>
               <option value="Eons">Eons</option>
               <option value="Strange Aeons">Strange Aeons</option>
-            </select>
+      </select></fieldset>
       </li>
-      <li> Is there anything else you want us to know? Feedback? Suggestions?
-        <p><textarea name="message" rows="10" cols="30"></textarea></p></li>
+      <li> <fieldset><legend><label for="feedback">Is there anything else you want us to know? Feedback? Suggestions?</label></legend>
+        <p><textarea name="message" rows="10" cols="30" id="feedback"></textarea></p></li>
+        </fieldset>
     </ol>
   <input type="button" value="Submit" onclick="alertFunction()" onKeyPress="alertFunction()">
     </form>
