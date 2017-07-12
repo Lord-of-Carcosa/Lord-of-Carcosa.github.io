@@ -6,7 +6,7 @@
   
   
   
-      <link rel="stylesheet" href="css/survey.css">
+      <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -20,15 +20,15 @@
       <p><input type="radio" id="time3" name="time" value="> 2 years ago"><label for="time3">More than 2 years ago</label></p></fieldset>
       </li>
       <li><fieldset><legend> <label for "experience">Describe your experience in the field below.</legend></label>
-        <p> <br><textarea name="message" id="experience" rows="10" cols="30"></textarea></p></li></fieldset>
+        <p> <label for="experience">Describe your experience here.</label><br><textarea name="message" id="experience" rows="10" cols="30"></textarea></p></li></fieldset>
   <li> <fieldset><legend>Which cities did you visit? (Check all that apply)</legend>
         <p><input type="checkbox" name="city1" value="Carcosa" id="carcosa"><label for="carcosa">Carcosa</label></p>
-        <p><input type="checkbox" name="city2" value="R'lyeh" id="rlyeh"><lbel for="rlyeh">R'lyeh</label></p>
+        <p><input type="checkbox" name="city2" value="R'lyeh" id="rlyeh"><label for="rlyeh">R'lyeh</label></p>
         <p><input type="checkbox" name="city3" value="Innsmouth" id="innsmouth"><label for="innsmouth">Innsmouth</label></p>
         <p><input type="checkbox" name="city4" value="Arkham" id="arkham"><label for="arkham">Arkham</label></p>
         <p><input type="checkbox" name="city5" value="Hyperborea" id="hyperborea"><label for ="hyperborea">Hyperborea</label></p>
         <p><input type="checkbox" name="city6" value="Yuggoth" id="yuggoth"><label for="yuggoth">Yuggoth</label></p>
-        <p><input type="checkbox" name="city7" value="Other" id="other"><label for="other">Other (please specify): </label><input type="text" name="othercity" id="othertext"></p>
+        <p><input type="checkbox" name="city7" value="Other" id="other"><label for="other"><label for="othertext">Other (please specify): </label></label><input type="text" name="othercity" id="othertext"></p>
         </fieldset>
         </li>
   <li><fieldset><legend> How long was your stay?</legend>
@@ -62,7 +62,7 @@
   <input type="button" value="Submit" onclick="alertFunction()" onKeyPress="alertFunction()">
     </form>
   
-    <script src="js/survey.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>
