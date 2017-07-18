@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Lemuria Travel Website</title>
@@ -12,9 +12,7 @@
 </head>
 
 <body>
-  <html lang="en">
-<head>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <head>
   <title> Welcome to Lemuria</title>
 </head>
 
@@ -45,8 +43,33 @@
   <a class="next" label="Next" onKeyPress="plusSlides(-1)" tabindex=0 onclick="plusSlides(1)">Next Image</a>
 </div>
 <br>
-
-
+<div class='smallsection'>
+  <h2><label for="danger">Sliding Scale of Danger</label></h2>
+  <input type="range" id="dangerslider" min="0" max="100" value="0" onchange="showDanger()">
+<p>Just set the slider above to indicate how much danger you would prefer to have on your trip, and then click the button to show you what kind of experiences you might want to have in Lemuria. (You may need to scroll down to view results.)</p>
+  <input type="button" id="dangerbutton" onclick="showWarning()" onKeyPress="showWarning()" value="Click To Get Danger"><label for="dangerbutton" class="sr"><p>Click To Get Danger</p></label>
+  <p class="dangerwarning" id="dangerwarning1">
+    You probably should not be here. Leave now, traveler.</p>
+  <p class="dangerwarning" id="dangerwarning2">
+    Maybe you should just step in, buy some merchandise, and go home and say you did stuff.</p>
+  <p class="dangerwarning" id="dangerwarning3">
+    You might be able to venture beyond the gift shop, but not very far. Maybe check out the cities, and not the ancient ones; the modern ones. Suggestions: Arkham, Innsmouth.</p>
+  <p class="dangerwarning" id="dangerwarning4">
+    You're pretty brave. You can explore Arkham and Innsmouth's hidden secrets.</p>
+  <p class="dangerwarning" id="dangerwarning5">
+    Explore the depths of Arkham and Innsmouth, but take note also of Yuggoth.</p>
+  <p class="dangerwarning" id="dangerwarning6">
+    Most of the cities are probably a good choice to be explored, though don't get lost in Yuggoth or Hyperborea.</p>
+  <p class="dangerwarning" id="dangerwarning7">
+  Congratulations! You are sufficiently corageous enough that you have been selected for a special tour of Carcosa. Downloading directly into your brain right now should be a memory of events long past, including a tour through the palace of Carcosa! What an event!</p>
+  <p class="dangerwarning" id="dangerwarning8">
+    Not content to explore Carcosa in your mind, you might want to try exploring it in real life!</p>
+  <p class="dangerwarning" id="dangerwarning9">
+    Visit the pristine landscape of R'lyeh, and visit the great Temple inside.</p>
+  <p class="dangerwarning" id="dangerwarning10">
+    Fight Cthulhu!</p>
+    </div>
+    </div>
   </div>
   <div class='smallsection'>
     <h2><a href="about.html">About Us (Click for About page)</a></h2>
@@ -79,9 +102,8 @@
 <div class="smallsection">
   <h2><a href="legal.html">Legal Information</a></h2>
   <p>Information that is legally required for you to know before you can travel to Lemuria.</p>
-  <h2><a href="survey.html">Survey</a></h2>
+  <h2>Survey</h2>
   <p>Already been to Lemuria? Take the survey and let us know about your experience!</p>
-  </html>
   
     <script src="js/index.js"></script>
 

@@ -26,91 +26,13 @@ function expand2() {
         x.style.display = 'block';
     }
    if (x.style.display === 'block') {
-    button.value = "Hide Information";
+   button.value = "Hide Information";
   }
   else {
     button.value = "Show Information";
   }
   
 }
-
-
-function expand3() {
-  var button = document.getElementById("myButton3");
-    var x = document.getElementById('expandable3');
-    if (x.style.display === 'block') {
-        x.style.display = 'none';
-    } 
-  else {
-        x.style.display = 'block';
-    }
-   if (x.style.display === 'block') {
-    button.value = "Hide Information";
-  }
-  else {
-    button.value = "Show Information";
-  }
-  
-}
-
-
-function expand4() {
-  var button = document.getElementById("myButton4");
-    var x = document.getElementById('expandable4');
-    if (x.style.display === 'block') {
-        x.style.display = 'none';
-    } 
-  else {
-        x.style.display = 'block';
-    }
-   if (x.style.display === 'block') {
-    button.value = "Hide Information";
-  }
-  else {
-    button.value = "Show Information";
-  }
-  
-}
-
-
-function expand5() {
-  var button = document.getElementById("myButton5");
-    var x = document.getElementById('expandable5');
-    if (x.style.display === 'block') {
-        x.style.display = 'none';
-    } 
-  else {
-        x.style.display = 'block';
-    }
-   if (x.style.display === 'block') {
-    button.value = "Hide Information";
-  }
-  else {
-    button.value = "Show Information";
-  }
-  
-}
-
-
-function expand6() {
-  var button = document.getElementById("myButton6");
-    var x = document.getElementById('expandable6');
-    if (x.style.display === 'block') {
-        x.style.display = 'none';
-    } 
-  else {
-        x.style.display = 'block';
-    }
-   if (x.style.display === 'block') {
-    button.value = "Hide Information";
-  }
-  else {
-    button.value = "Show Information";
-  }
-  
-}
-
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -136,4 +58,128 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
+}
+
+function showWarning() {
+  var danger = document.getElementById("dangerslider").value;
+  if (danger <= 10) { 
+  document.getElementById("dangerwarning1").style.visibility = "visible";
+  document.getElementById("dangerwarning2").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  if (10 < danger && danger <= 20) {
+    document.getElementById("dangerwarning2").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  if (20 < danger && danger <= 30) {
+    document.getElementById("dangerwarning3").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning2").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  if (30 < danger && danger <= 40) {
+    document.getElementById("dangerwarning4").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning2").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  if (40 < danger && danger <= 50) {
+    document.getElementById("dangerwarning5").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning2").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  if (50 < danger && danger <= 60) {
+    document.getElementById("dangerwarning6").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning2").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  if (60 < danger && danger <= 70) {
+    document.getElementById("dangerwarning7").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning2").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  if (70 < danger && danger <= 80) {
+    document.getElementById("dangerwarning8").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning2").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  if (80 < danger && danger <= 90) {
+    document.getElementById("dangerwarning9").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning2").style.visibility = "hidden";
+ document.getElementById("dangerwarning10").style.visibility = "hidden";
+  }
+  else {
+    document.getElementById("dangerwarning10").style.visibility = "visible";
+  document.getElementById("dangerwarning1").style.visibility = "hidden";
+  document.getElementById("dangerwarning3").style.visibility = "hidden";
+  document.getElementById("dangerwarning4").style.visibility = "hidden";
+ document.getElementById("dangerwarning5").style.visibility = "hidden";
+ document.getElementById("dangerwarning6").style.visibility = "hidden";
+ document.getElementById("dangerwarning7").style.visibility = "hidden";
+  document.getElementById("dangerwarning8").style.visibility = "hidden";
+ document.getElementById("dangerwarning9").style.visibility = "hidden";
+ document.getElementById("dangerwarning2").style.visibility = "hidden";
+  }
 }

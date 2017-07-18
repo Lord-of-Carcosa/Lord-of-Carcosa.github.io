@@ -128,3 +128,9 @@ ul li a {
   height:1; 
   overflow:hidden; 
 }
+.dangerwarning {
+  visibility: hidden;
+}
+.sr {
+  visibility: hidden;
+}
