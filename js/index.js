@@ -74,7 +74,7 @@ function showWarning() {
  document.getElementById("dangerwarning9").style.visibility = "hidden";
  document.getElementById("dangerwarning10").style.visibility = "hidden";
   }
-  if (10 < danger && danger <= 20) {
+  else if (10 < danger && danger <= 20) {
     document.getElementById("dangerwarning2").style.visibility = "visible";
   document.getElementById("dangerwarning1").style.visibility = "hidden";
   document.getElementById("dangerwarning3").style.visibility = "hidden";
@@ -86,7 +86,7 @@ function showWarning() {
  document.getElementById("dangerwarning9").style.visibility = "hidden";
  document.getElementById("dangerwarning10").style.visibility = "hidden";
   }
-  if (20 < danger && danger <= 30) {
+  else if (20 < danger && danger <= 30) {
     document.getElementById("dangerwarning3").style.visibility = "visible";
   document.getElementById("dangerwarning1").style.visibility = "hidden";
   document.getElementById("dangerwarning2").style.visibility = "hidden";
@@ -98,7 +98,7 @@ function showWarning() {
  document.getElementById("dangerwarning9").style.visibility = "hidden";
  document.getElementById("dangerwarning10").style.visibility = "hidden";
   }
-  if (30 < danger && danger <= 40) {
+  else if (30 < danger && danger <= 40) {
     document.getElementById("dangerwarning4").style.visibility = "visible";
   document.getElementById("dangerwarning1").style.visibility = "hidden";
   document.getElementById("dangerwarning3").style.visibility = "hidden";
@@ -110,7 +110,7 @@ function showWarning() {
  document.getElementById("dangerwarning9").style.visibility = "hidden";
  document.getElementById("dangerwarning10").style.visibility = "hidden";
   }
-  if (40 < danger && danger <= 50) {
+  else if (40 < danger && danger <= 50) {
     document.getElementById("dangerwarning5").style.visibility = "visible";
   document.getElementById("dangerwarning1").style.visibility = "hidden";
   document.getElementById("dangerwarning3").style.visibility = "hidden";
@@ -122,7 +122,7 @@ function showWarning() {
  document.getElementById("dangerwarning9").style.visibility = "hidden";
  document.getElementById("dangerwarning10").style.visibility = "hidden";
   }
-  if (50 < danger && danger <= 60) {
+  else if (50 < danger && danger <= 60) {
     document.getElementById("dangerwarning6").style.visibility = "visible";
   document.getElementById("dangerwarning1").style.visibility = "hidden";
   document.getElementById("dangerwarning3").style.visibility = "hidden";
@@ -134,7 +134,7 @@ function showWarning() {
  document.getElementById("dangerwarning9").style.visibility = "hidden";
  document.getElementById("dangerwarning10").style.visibility = "hidden";
   }
-  if (60 < danger && danger <= 70) {
+  else if (60 < danger && danger <= 70) {
     document.getElementById("dangerwarning7").style.visibility = "visible";
   document.getElementById("dangerwarning1").style.visibility = "hidden";
   document.getElementById("dangerwarning3").style.visibility = "hidden";
@@ -146,7 +146,7 @@ function showWarning() {
  document.getElementById("dangerwarning9").style.visibility = "hidden";
  document.getElementById("dangerwarning10").style.visibility = "hidden";
   }
-  if (70 < danger && danger <= 80) {
+  else if (70 < danger && danger <= 80) {
     document.getElementById("dangerwarning8").style.visibility = "visible";
   document.getElementById("dangerwarning1").style.visibility = "hidden";
   document.getElementById("dangerwarning3").style.visibility = "hidden";
@@ -158,7 +158,7 @@ function showWarning() {
  document.getElementById("dangerwarning9").style.visibility = "hidden";
  document.getElementById("dangerwarning10").style.visibility = "hidden";
   }
-  if (80 < danger && danger <= 90) {
+  else if (80 < danger && danger <= 90) {
     document.getElementById("dangerwarning9").style.visibility = "visible";
   document.getElementById("dangerwarning1").style.visibility = "hidden";
   document.getElementById("dangerwarning3").style.visibility = "hidden";
