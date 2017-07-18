@@ -45,9 +45,8 @@
 <br>
 <div class='smallsection'>
   <h2><label for="danger">Sliding Scale of Danger</label></h2>
-  <input type="range" id="dangerslider" min="0" max="100" value="0" onchange="showDanger()">
-<p>Just set the slider above to indicate how much danger you would prefer to have on your trip, and then click the button to show you what kind of experiences you might want to have in Lemuria. (You may need to scroll down to view results.)</p>
-  <input type="button" id="dangerbutton" onclick="showWarning()" onKeyPress="showWarning()" value="Click To Get Danger"><label for="dangerbutton" class="sr"><p>Click To Get Danger</p></label>
+  <input type="range" id="dangerslider" min="0" max="100" value="0" onchange="showWarning()">
+<p>Just set the slider above to indicate how much danger you would prefer to have on your trip, and then scroll down to see suggestions.</p>
   <p class="dangerwarning" id="dangerwarning1">
     You probably should not be here. Leave now, traveler.</p>
   <p class="dangerwarning" id="dangerwarning2">
