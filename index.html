@@ -45,7 +45,7 @@
 <br>
 <div class='smallsection'>
   <h2><label for="danger">Sliding Scale of Danger</label></h2>
-  <input type="range" id="dangerslider" min="0" max="100" value="0" onchange="showWarning()">
+  <input type="range" id="dangerslider" min="1" max="100" value="50" step="1" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" onchange="showWarning()">
 <p>Just set the slider above to indicate how much danger you would prefer to have on your trip, and then scroll down to see suggestions.</p>
   <p class="dangerwarning" id="dangerwarning1">
     You probably should not be here. Leave now, traveler.</p>
@@ -72,7 +72,7 @@
   </div>
   <div class='smallsection'>
     <h2><a href="about.html">About Us (Click for About page)</a></h2>
-    <input type="button" onKeyPress="expand1()"onclick="expand1()" id="myButton1" class="button" value="Show Information"/>
+    <input type="button" onKeyPress="expand1()"onclick="expand1()" id="myButton1" class="button" value="Show Information"aria-pressed="false" role="button"onclick="handleBtnClick(event)">
     <div id="expandable1" class="expandable">
     <p>Lemuria is a small island off of the West North American coast, discovered by the famed explorer Howard Philips.</p>
     <p>Long thought but a legend, the island was uninhabited; however, there were the ruins of a great civilization on its surface. Scraps of ancient texts named these cities, and other more modern cities were built near them.</p>
@@ -101,7 +101,7 @@
 <div class="smallsection">
   <h2><a href="legal.html">Legal Information</a></h2>
   <p>Information that is legally required for you to know before you can travel to Lemuria.</p>
-  <h2>Survey</h2>
+  <h2><a href="survey.html">Survey</a></h2>
   <p>Already been to Lemuria? Take the survey and let us know about your experience!</p>
   
     <script src="js/index.js"></script>

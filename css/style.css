@@ -1,4 +1,4 @@
-body {
+  body {
   background-color: #CA6F1E;
   font-family: "times new roman", sans-serif;
 }
@@ -133,4 +133,14 @@ ul li a {
 }
 .sr {
   visibility: hidden;
+}
+.button,
+[role="button"] {
+    padding: 3px;
+    border: 1px solid #CCC;
+}
+
+.button[aria-pressed="true"],
+[role="button"][aria-pressed="true"] {
+    border: 2px solid #000;
 }
