@@ -134,13 +134,13 @@ ul li a {
 .sr {
   visibility: hidden;
 }
-.button,
+input
 [role="button"] {
     padding: 3px;
     border: 1px solid #CCC;
 }
 
-.button[aria-pressed="true"],
+input[aria-pressed="true"],
 [role="button"][aria-pressed="true"] {
     border: 2px solid #000;
 }
