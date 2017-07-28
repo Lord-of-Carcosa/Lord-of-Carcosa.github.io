@@ -122,3 +122,9 @@ function toggleButton(element) {
   // Change aria-pressed to the opposite state
   element.setAttribute("aria-pressed", !pressed);
 }
+
+function labelChange() {
+      var x = document.getElementById("dangerslider").value
+   var label = document.getElementById("sliderlabel");
+    label.textContent = "Slider Value: " + x
+}
