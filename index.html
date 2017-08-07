@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
   <meta charset="UTF-8">
   <title>Lemuria Travel Website</title>
@@ -55,7 +55,7 @@
   </div>
   <div class='smallsection'>
     <h2><a href="about.html">About Us (Click for About page)</a></h2>
-    <input type="button" onKeyPress="expand1()"onclick="expand1()" id="myButton1" class="button" value="Show Information"aria-pressed="false" role="button"onclick="handleBtnClick(event)" tabindex=0>
+    <input type="button" onKeyPress="expand1(); handleBtnClick(event)"onclick="expand1();handleBtnClick(event)" id="myButton1" class="button" value="Show Information"aria-pressed="false" role="button"tabindex=0>
     <div id="expandable1" class="expandable">
     <p>Lemuria is a small island off of the West North American coast, discovered by the famed explorer Howard Philips.</p>
     <p>Long thought but a legend, the island was uninhabited; however, there were the ruins of a great civilization on its surface. Scraps of ancient texts named these cities, and other more modern cities were built near them.</p>
@@ -66,7 +66,7 @@
   
   <div class="smallsection">
     <h2><a href="citiesmain.html">Cities (Click for Cities page)</a></h2>
-    <input type="button" onKeyPress="expand2()"onclick="expand2()" id="myButton2" class="button" value="Show Information"/>
+    <input type="button" onKeyPress="expand2()L handleBtnClick(event)"onclick="expand2();handleBtnClick(event)" id="myButton2" class="button" value="Show Information"/>
     <div id="expandable2" class="expandable">
     <p>Lemuria has many cities. Some of them are the ancient cities discovered by the first explorers. Some are more modern. Almost all are crawling with seemingly unearthly horrors. So stop by some of our most famous:
       <ul>
@@ -84,7 +84,7 @@
 <div class="smallsection">
   <h2><a href="legal.html">Legal Information</a></h2>
   <p>Information that is legally required for you to know before you can travel to Lemuria.</p>
-  <h2>Survey</h2>
+  <h2><a href="survey.html">Survey</a></h2>
   <p>Already been to Lemuria? Take the survey and let us know about your experience!</p>
   
     <script src="js/index.js"></script>
