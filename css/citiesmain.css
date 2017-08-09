@@ -1,5 +1,5 @@
 body {
-  background-color: #CA6F1E;
+  background-color: #e28c40;
   font-family: "times new roman", sans-serif;
 }
 .bigsection {
@@ -17,9 +17,6 @@ p a {
   font-size: 18px;
 }
 
-ul li a {
-  color: #0B5345;
-}
 
 .disclaimer{
   font-size= 4px;
