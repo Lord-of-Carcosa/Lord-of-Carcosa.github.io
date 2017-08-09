@@ -12,15 +12,15 @@
 </head>
 
 <body>
-    <form>
+    <form action="formsubmitted.html">
     <ol>
       <li><fieldset> <legend>When did you last travel to Lemuria?</legend>
-      <p><input type="radio" name="time" id="time1" value="< 1 year ago"><label for="time1">Less than 1 year ago</label></p>
+      <p><input type="radio" name="time" id="time1" value="< 1 year ago" required><label for="time1">Less than 1 year ago</label></p>
       <p><input type="radio" id="time2" name="time" value="< 2 years ago"><label for="time2">Less than 2 years ago</label></p>
       <p><input type="radio" id="time3" name="time" value="> 2 years ago"><label for="time3">More than 2 years ago</label></p></fieldset>
       </li>
       <li><fieldset><legend> <label for "experience">Describe your experience in the field below.</legend></label>
-        <p> <label for="experience">Describe your experience here.</label><br><textarea name="message" id="experience" rows="10" cols="30"></textarea></p></li></fieldset>
+        <p> <label for="experience">Describe your experience here.</label><br><textarea name="message" id="experience" rows="10" cols="30" required></textarea></p></li></fieldset>
   <li> <fieldset><legend>Which cities did you visit? (Check all that apply)</legend>
         <p><input type="checkbox" name="city1" value="Carcosa" id="carcosa"><label for="carcosa">Carcosa</label></p>
         <p><input type="checkbox" name="city2" value="R'lyeh" id="rlyeh"><label for="rlyeh">R'lyeh</label></p>
@@ -56,15 +56,15 @@
       </select></fieldset>
       </li>
     <li><fieldset><legend>Did you acquire any forbidden knowledge in Lemuria? Secrets?</legend>
-      <input type="radio" value="yes" id="yessecrets"><label for="yessecrets">Yes</label>
-      <input type="radio" value="no" id="nosecrets"><label for="nosecrets">No</label></fieldset></li>
+      <input type="radio" value="yes" id="yessecrets" required><label for="yessecrets" >Yes</label>
+      <input type="radio" value="no" id="nosecrets" required><label for="nosecrets">No</label></fieldset></li>
       <li><fieldset><legend><label for="secrets">If so, what were they?</label></legend>
         <input type="textarea" id="secrets"></fieldset></li>
       <li> <fieldset><legend><label for="feedback">Is there anything else you want us to know? Feedback? Suggestions?</label></legend>
-        <p><textarea name="message" rows="10" cols="30" id="feedback"></textarea></p></li>
+        <p><textarea name="message" rows="10" cols="30" id="feedback" required></textarea></p></li>
         </fieldset>
     </ol>
-  <input type="button" value="Submit" onclick="alertFunction()">
+  <input type="submit" value="Submit">
     </form>
   
     <script src="js/survey.js"></script>
