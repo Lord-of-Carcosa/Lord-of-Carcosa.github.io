@@ -76,7 +76,6 @@ body {
   position: absolute;
   bottom: 8px;
   width: 100%;
-  color: white;
   text-align: center;
 }
 
@@ -132,4 +131,23 @@ body {
 
 .carcosa {
   background-color: #dbd959;
+}
+
+.rlyeh {
+  background-color: darkgreen;
+  color: white;
+}
+.innsmouth {
+  background-color: #603700;
+  color: white;
+}
+.arkham {
+  background-color: grey;
+}
+.hyperborea {
+  background-color: #d8fffb;
+}
+.yuggoth {
+  background-color: #245630;
+  color: white;
 }
