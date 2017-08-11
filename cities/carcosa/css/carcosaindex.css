@@ -1,5 +1,5 @@
-body {
-  background-color: #df7c26;
+  body {
+  background-color: #dbd959;
   font-family: "times new roman", sans-serif;
 }
 .bigsection {
@@ -9,23 +9,16 @@ body {
   font-size: 24px;
 }
 
-.smallsection ul, .smallsection p, .smallsection i {
-  font-size: 18px;
-}
 
-.disclaimer{
-  font-size= 4px;
+.smallsection ul, .smallsection p{
+  font-size: 18px;
 }
 
 .expandable {
   display: none
 }
-.showbutton {
-  display: inline;
-}
-.hidebutton {
-  display: none
-}
+
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -128,7 +121,19 @@ body {
   height:1; 
   overflow:hidden; 
 }
+.dangerwarning {
+  visibility: hidden;
+}
+.sr {
+  visibility: hidden;
+}
+input
+[role="button"] {
+    padding: 3px;
+    border: 1px solid #CCC;
+}
 
-.carcosa {
-  background-color: #dbd959;
+input[aria-pressed="true"],
+[role="button"][aria-pressed="true"] {
+    border: 2px solid #000;
 }
