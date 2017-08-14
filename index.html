@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Lemuria Travel Website</title>
@@ -46,7 +46,7 @@
 <div class='smallsection'>
   <h2><label for="danger">Sliding Scale of Danger</label></h2>
   <p>Just set the slider below to indicate how much danger you would prefer to have on your trip, and then look below it to see suggestions.</p>
-  <input role="slider" type="range" id="dangerslider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" step="1" onchange="showWarning(); labelChange();">
+  <input role="slider" type="range" id="dangerslider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" step="10" onchange="showWarning(); labelChange();">
   <p><label for="dangerslider" id="sliderlabel">Slider Value: 50</label></p>
   <p class="dangerwarning" id="dangerwarning">
     </p>
